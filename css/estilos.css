@@ -1,0 +1,434 @@
+
+.contenedorEncabezado{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.encabezado{
+    text-transform: uppercase;
+    color: rgb(214, 184, 12);
+}
+.logo{
+    width: 70px;
+    height: 70px;
+    float: left;
+    padding: 10px;
+}
+.tituloEncabezado{
+    padding: 10px;
+    padding-left: 80px;
+}
+.carritoCompras p {
+    text-align: end ;
+}
+.contenedorPie{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+
+
+.contenedorGral{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    display: grid;
+}
+.tituloGaleriaProductos{
+    text-decoration: underline;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.galeriaProductos{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: repeat(8);
+    grid-gap: 30px;
+    padding: 30px;
+}
+
+
+.tarjetaProducto {
+    width: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    border: 2px solid white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 30px;
+    padding-right: 30px; 
+}
+.botonAgregarCarrito{
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.tablaCarrito,td,th{
+    padding: 15px;
+
+}
+.tablaCarrito thead{
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    font-size: 30px;
+
+}
+.tablaCarrito thead th{
+    border: 1px solid black;
+}
+
+.cuerpoTabla{
+    font-size: 18px;
+}
+
+.botonesOpcionesCarrtio{
+    padding: 50px;
+}
+
+.botonSeguirComprando{
+    display: inline-block;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    width: 250px;
+}
+.botonFinalizarCompra{
+    display: inline-block;
+    color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    width: 250px;
+}
+.botonQuitarCarrito{
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    height: 50px;
+    width: 100px;
+}
+
+.botonVaciarCarrito{
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    height: auto;
+    width: auto;
+    font-size: 18px;
+}
+
+
+.pieTabla{
+    border-top: 2px solid white;
+    /* padding: 10px; */
+}
+.precioTotal{
+    font-size: 30px;
+    text-transform: uppercase;
+    text-decoration: solid;
+}
+
+.contenedorFormulario{
+    padding: 20px;
+}
+
+.contenedorDatosPersonales{
+    border: 3px solid white;
+    padding: 50px;
+    border-radius: 5px;
+    
+    /* display: flex; */
+}
+
+.encabezadoDatosPersonales{
+    font-size: 30px;
+    padding-bottom: 30px;
+    text-decoration: underline;
+}
+.contenedor1{
+    padding: 10px;
+    display: grid;
+    text-align: start;
+    border-radius: 3px;
+}
+.contenedorLabel{
+    font-size: 20px;
+}
+
+.inputDatosPersonales{
+    width: auto;
+}
+.contenedor2{
+    padding: 10px;
+    display: grid;
+    text-align: start;
+    border-radius: 3px;
+}
+.contenedorDatosEnvio{
+    border: 3px solid white;
+    padding: 50px;
+    border-radius: 5px;
+    
+    /* display: flex; */
+}
+.encabezadoDatosEnvio{
+    font-size: 30px;
+    padding-bottom: 30px;
+    text-decoration: underline;
+}
+
+.contenedorGeneral{
+    padding: 20px;
+    border-radius: 3px;
+}
+
+.botonesCheckOut{
+    width: auto;
+    padding: 20px;
+    display: inline-flex;
+    justify-content: center;
+    /* grid-template-columns: 1fr;
+    grid-row: repeat(2); */
+}
+
+.botonCancelarCompra{
+    width: 100px;
+    padding: 10px;
+    background-color: red;
+    color: black;
+    border-radius: 3px;
+}
+
+.botonAceptarCompra{
+    width: 100px;
+    padding: 10px;
+    background-color: rgb(29, 199, 57);
+    color: black;
+    border-radius: 3px;
+}
+
+.selectProvincia{
+    padding: 5px;
+    border-radius: 3px;
+    width: auto;
+}
+
+.contenedorPago{
+    border: 3px solid white;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.contenedorMetodosPago{
+    display: grid;
+    grid-template-columns: auto;
+    grid-row: repeat(3);
+    grid-gap: 20px;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+}
+
+.encabezadoMetodosPago{
+    font-size: 30px;
+    padding-bottom: 30px;
+    text-decoration: underline;
+}
+
+.contInputPago{
+    width: auto;
+    height: auto;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.contenedorInputRadio{
+    text-align: center;
+}
+
+.contenedorFormulario{
+    align-content: center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-row: repeat(1);
+}
+
+.tituloCheckout{
+    display: grid;
+    grid-template-columns: auto;
+    grid-row: repeat(1);
+}
+
+.montoCheckout{
+    display: grid;
+    grid-template-columns: auto;
+    grid-row: repeat(1);
+}
+
+.imgMetodoPago{
+    border: 2px solid white;
+    padding: 20px;
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.iconoEfectivo{
+    font-size: 80px;
+    padding: 10px;
+}
+.iconoTarjeta{
+    font-size: 80px;
+    padding: 10px;
+}
+
+.iconoCarrito{
+    font-size: x-large;
+    padding: 10px;
+    text-align: right;
+}
+
+.botonContinuar{
+    padding: 5px;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(214, 184, 12);
+}
+
+.botonContinuar2{
+    padding: 5px;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(214, 184, 12);
+}
+.contBotonContinuar{
+    padding: 10px;
+    text-align: end;
+}
+.contBotonContinuar2{
+    padding: 10px;
+    text-align: end;
+}
+
+.parrafoPago{
+    font-size: 20px;
+}
+
+@media only screen and (min-width: 480px) {
+    .galeriaProductos {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4);
+    }
+    .contenedorMetodosPago{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2);
+    }
+    .inputDatosPersonales{
+        width: 250px
+    }
+    .selectProvincia{
+        width: 200px;
+    }
+    .botonesCheckOut{
+        grid-template-columns: 1fr 1fr;
+        grid-row: repeat(1);
+    }
+    .contenedorFormulario{
+        grid-template-columns: 1fr;
+        grid-row: repeat(1);
+    }
+    .tituloCheckout{
+        grid-template-columns: 1fr;
+        grid-row: repeat(1);
+    }
+}
+
+@media only screen and (min-width: 800px) {
+
+    .galeriaProductos {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3);
+    }
+    .contenedorMetodosPago{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(1);
+    }
+    .inputDatosPersonales{
+        width: 400px
+    }
+    .selectProvincia{
+        width: 400px;
+    }
+    .botonesCheckOut{
+        grid-template-columns: 1fr 1fr;
+        grid-row: repeat(1);
+    }
+    .contenedorFormulario{
+        grid-template-columns: 1fr;
+        grid-row: repeat(1);
+    }
+    .tituloCheckout{
+        grid-template-columns: 1fr;
+        grid-row: repeat(1);
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .galeriaProductos {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(2);
+    }
+    .contenedorMetodosPago{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(1);
+    }
+    .inputDatosPersonales{
+        width: 400px
+    }
+    .selectProvincia{
+        width: 400px;
+    }
+    .botonesCheckOut{
+        grid-template-columns: 1fr 1fr;
+        grid-row: repeat(1);
+    }
+    .contenedorFormulario{
+        grid-template-columns: 1fr;
+        grid-row: repeat(1);
+    }
+    .tituloCheckout{
+        grid-template-columns: 1fr;
+        grid-row: repeat(1);
+    }
+}

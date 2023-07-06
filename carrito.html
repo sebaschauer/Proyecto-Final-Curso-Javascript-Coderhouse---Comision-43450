@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/variables.js"></script>
+    <script defer src="./js/carrito.js"></script>
+    <title>Tienda Cervecera</title>
+</head>
+<body>
+    <header>
+        <div class="contenedorEncabezado bg-dark text-white container-fluid">
+            <div class="encabezado container-fluid">
+                <img class="logo" id="logoCarrito" src="img/logo 1.png" alt=""><h1 class="tituloEncabezado container-fluid" id="tituloEncabezado">Tienda Cervecera</h1>
+            </div>
+            <div class="carritoCompras container-fluid">
+                <a class="carrito nav-link active iconoCarrito" href="carrito.html" id="carrito"><i class="fa-solid fa-cart-shopping iconoCarrito;"></i><span id="elemCarrito" class="iconoCarrito"> 0</span></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="contenedorGral container-fluid bg-dark text-white ">
+            <div class="tituloGaleriaProductos">
+                <h1 id="tituloCarrito"> Carrito de Compras</h1>
+            </div>
+            <div class="galeriaCarrito row container-fluid" id="galeriaCarrito"> 
+                <table class="tablaCarrito">
+                    <thead>
+                        <tr>
+                            <th id="encabezadoTabla">Producto</th>
+                            <th id="encabezadoTabla">Precio</th>
+                            <th id="encabezadoTabla">Cantidad</th>
+                            <th id="encabezadoTabla">Eliminar</th>
+                        </tr>
+                    </thead>
+                    <tbody class="cuerpoTabla">
+                    </tbody>
+                    <tfoot class="pieTabla">
+                        <td class="precioTotal">Total</td>
+                        <td class="precioTotal">$<span id="precioTotal"></span></td>
+                        <td class="precioTotal"><span id="numeroProductosCarrito"></span></td>
+                        <td><button class="button button-outline botonVaciarCarrito" id="vaciarCarrito">Vaciar Carrito</button></td>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="botonesOpcionesCarrito">
+                <button class="botonSeguirComprando" id="botonSeguirComprando" href="">Seguir Comprando</button>
+                <button class="botonFinalizarCompra" id="botonFinalizarCompra" href="">Finalizar Compra</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="contenedorPie bg-dark text-white">
+            <div class="piePagina">
+                <p>Sitio creado por Seba Schauer.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

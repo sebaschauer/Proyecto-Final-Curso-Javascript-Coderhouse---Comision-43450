@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="./js/checkout.js"></script>
+    <script src="./js/variables.js"></script>
+    <!-- <script defer src="./js/carrito.js"></script> -->
+    <title>Tienda Cervecera - Checkout</title>
+</head>
+<body>
+    <header>
+        <div class="contenedorEncabezado bg-dark text-white container-fluid">
+            <div class="encabezado container-fluid">
+                <img class="logo" id="logoCheck" src="img/logo 1.png" alt=""><h1 class="tituloEncabezado container-fluid" id="tituloEncabezado">Tienda Cervecera</h1>
+            </div>
+            <div class="carritoCompras container-fluid">
+                <a class="carrito nav-link active iconoCarrito" href="carrito.html" id="carrito"><i class="fa-solid fa-cart-shopping iconoCarrito;"></i><span id="elementosCarrito" class="iconoCarrito"> 0</span></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="contenedorGral container-fluid bg-dark text-white ">
+            <div class="tituloCheckout container-fluid">
+                <h1 id="tituloCheckout" class="montoCheckout"></h1>
+                <h1 id="montoCheckout" class="montoCheckout"></h1>
+            </div>
+            <div class="contenedorFormulario container-fluid">
+                <form class="formularioPedido container-fluid" action="">
+                    <div class="contenedorGeneral container-fluid" id="cuerpoFormulario">
+                        <div class="contenedorDatosPersonales">
+                            <label for="" class="encabezadoDatosPersonales"> Datos Personales</label>
+                            <div class="contenedor1">
+                                <div class="contenedorLabel">
+                                    <label for="Nombre">Email:</label>
+                                </div>
+                                <div class="contenedorInput">
+                                    <input type="email" name="correo" id="" placeholder="Ingrese su correo electronico" class="inputDatosPersonales">
+                                </div>
+                            </div>
+                            <div class="contenedor2">
+                                <div class="contenedorLabel">
+                                    <label for="Nombre">Nombre:</label>
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="Ingrese su nombre" class="inputDatosPersonales">
+                                </div>
+                            </div>
+                            <div class="contenedor2">
+                                <div class="contenedorLabel">
+                                    <label for="Nombre">Apellido:</label>
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="Ingrese su nombre" class="inputDatosPersonales">
+                                </div>
+                            </div>
+                            <div class="contenedor2">
+                                <div class="contenedorLabel">
+                                    <label for="Nombre">DNI:</label>
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="Ingrese su numero de documento" class="inputDatosPersonales">
+                                </div>
+                            </div>
+                            <div class="contenedor2">
+                                <div class="contenedorLabel">
+                                    <label for="Nombre">Telefono:</label>
+                                </div>
+                                <div>
+                                    <input type="tel" name="telefono" id="" placeholder="Ingrese su numero de telefono" class="inputDatosPersonales">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contenedorGeneral container-fluid">
+                        <div class="contenedorDatosEnvio">
+                            <label for="" class="encabezadoDatosEnvio"> Datos de Envio</label>
+                            <div class="contenedor1">
+                                <div class="contenedorLabel">
+                                    <label for="Nombre">Provincia:</label>
+                                </div>
+                                <div class="contenedorInput">
+                                    <select id="provincias" name="opcionesProv" class="selectProvincia">
+                                        <option value="opcion">Seleccione la Provincia</option>
+                                        <option value="1">CABA</option>
+                                        <option value="2">Buenos Aires</option>
+                                        <option value="3">Catamarca</option>
+                                        <option value="4">Chaco</option>
+                                        <option value="5">Cordoba</option>
+                                        <option value="6">Corrrientes</option>
+                                        <option value="7">Entre Rios</option>
+                                        <option value="8">Formosa</option>
+                                        <option value="9">Jujuy</option>
+                                        <option value="10">La Pampa</option>
+                                        <option value="11">La Rioja</option>
+                                        <option value="12">Mendoza</option>
+                                        <option value="13">Misiones</option>
+                                        <option value="14">Neuquen</option>
+                                        <option value="15">Rio Negro</option>
+                                        <option value="16">Salta</option>
+                                        <option value="17">San Juan</option>
+                                        <option value="18">San Luis</option>
+                                        <option value="19">Santa Cruz</option>
+                                        <option value="20">Santa Fe</option>
+                                        <option value="21">Santiago del Estero</option>
+                                        <option value="22">Tierra del Fuego</option>
+                                        <option value="23">Tucuman</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="contenedor2">
+                                <div class="contenedorLabel">
+                                    <label for="Nombre">Ciudad:</label>
+                                </div>
+                                <div>
+                                    <input type="text" value="Ingrese su nombre" class="inputDatosPersonales">
+                                </div>
+                            </div>
+                            <div class="contenedor2">
+                                <div class="contenedorLabel">
+                                    <label for="Nombre">Codigo Postal:</label>
+                                </div>
+                                <div>
+                                    <input type="text" value="Ingrese su nombre" class="inputDatosPersonales">
+                                </div>
+                            </div>
+                            <div class="contenedor2">
+                                <div class="contenedorLabel">
+                                    <label for="Nombre">Direccion:</label>
+                                </div>
+                                <div>
+                                    <input type="text" value="Ingrese su numero de documento" class="inputDatosPersonales">
+                                </div>
+                            </div>
+                            <div class="contenedor2">
+                                <div class="contenedorLabel">
+                                    <label for="Nombre">Piso/Departamento:</label>
+                                </div>
+                                <div>
+                                    <input type="tel" name="telefono" id="" value="Ingrese su numero de telefono" class="inputDatosPersonales">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="contenedorGeneral container-fluid">
+                            <div class="contenedorPago">
+                                <label for="" class="encabezadoMetodosPago"> Metodos de Pago</label>
+                                <div class="contenedor1">
+                                    <div class="contenedorLabel">
+                                        <label for="Nombre">Seleccione el metodo de pago:</label>
+                                    </div>
+                                    <div class="contenedorMetodosPago">
+                                        <div class="contInputPago">
+                                            <div class="imgMetodoPago">
+                                                <i class="fa-sharp fa-solid fa-money-bill-1 iconoEfectivo"></i>
+                                            </div>
+                                            <div class="contenedorLabel">
+                                                <label for="">Trans. Bancaria</label>
+                                            </div>
+                                            <div class="contenedorInputRadio">
+                                                <input type="radio" name="MetodoPago" id="PagoTransferencia" value="Efectivo">
+                                            </div>
+                                        </div>
+                                        <div class="contInputPago">
+                                            <div class="imgMetodoPago">
+                                                <i class="fa-solid fa-credit-card iconoTarjeta"></i>
+                                            </div>
+                                            <div class="contenedorLabel">
+                                                <label for="">Debito</label>
+                                            </div>
+                                            <div class="contenedorInputRadio">
+                                                <input type="radio" name="MetodoPago" id="PagoDebito" value="Debito">
+                                            </div>
+                                        </div>
+                                        <div class="contInputPago">
+                                            <div class="imgMetodoPago justify-content-center">
+                                                <i class="fa-solid fa-credit-card iconoTarjeta"></i>
+                                            </div>
+                                            <div class="contenedorLabel">
+                                                <label for="">Tarjeta</label>
+                                            </div>
+                                            <div class="contenedorInputRadio">
+                                                <input type="radio" name="MetodoPago" id="PagoTarjeta" value="Tarjeta">
+                                            </div>                                            
+                                        </div>
+                                        <div class="formulariosPago" id="formulariosPago">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="contenedor2">
+                                    <div class="contenedorLabel">
+                                        <label for="Nombre">Ciudad:</label>
+                                    </div>
+                                    <div>
+                                        <input type="text" value="Ingrese su nombre" class="inputDatosPersonales">
+                                    </div>
+                                </div>
+                                <div class="contenedor2">
+                                    <div class="contenedorLabel">
+                                        <label for="Nombre">Codigo Postal:</label>
+                                    </div>
+                                    <div>
+                                        <input type="text" value="Ingrese su nombre" class="inputDatosPersonales">
+                                    </div>
+                                </div>
+                                <div class="contenedor2">
+                                    <div class="contenedorLabel">
+                                        <label for="Nombre">Direccion:</label>
+                                    </div>
+                                    <div>
+                                        <input type="text" value="Ingrese su numero de documento" class="inputDatosPersonales">
+                                    </div>
+                                </div>
+                                <div class="contenedor2">
+                                    <div class="contenedorLabel">
+                                        <label for="Nombre">Piso/Departamento:</label>
+                                    </div>
+                                    <div>
+                                        <input type="tel" name="telefono" id="" value="Ingrese su numero de telefono" class="inputDatosPersonales">
+                                    </div>
+                                </div> -->
+                                <div class="botonesCheckOut">
+                                    <button class="button button-outline botonCancelarCompra" id="botonCancelarCompra" href="">Cancelar</button>
+                                    <button class="button button-outline botonAceptarCompra" id="botonAceptarCompra" href="">Aceptar</button>
+                                </div>
+                            </div>
+                        </div>    
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="contenedorPie bg-dark text-white">
+            <div class="piePagina">
+                <p>Sitio creado por Seba Schauer.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
